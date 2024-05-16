@@ -18,9 +18,9 @@ The following table provides a rough overview on how the different types of meta
 ### Pod reference table
 The following table provides reference information on the pods making up CP4D and its services.  
 
-|Pod name|Service|Scope*|Description*|Impact of restart*|
-|----------------| --- | --- | --- | --- | 
-|iis-services    |WKC|AD, DQ, IAS, MI|Legacy IIS services tier. Runs IAS, AD, QS, DQ, MI backend and UI components. | All AD, QS, and DQ jobs are cancelled. The IAS, MI, and DQ UIs are restarted. Takes > 10 min to restart. |
-|iis-xmetarepo   |WKC| AD, DQ, IAS, MI | XMeta metadata repository storing IAS, MI, and AD metadata (all legacy IGC metadata). | Requires subsequent restart of iis-services pod. |
-|finley-ml       |WKC|AD, QS|Implements term assignment machine learning capabilities.|Running AD, QS, and DQ jobs may fail.|
-|is-en-conductor |WKC| AD, DQ, DS|Legacy IIS engine tier. Runs DataStage jobs for AD, and DQ, as well as ODF.|Running AD and DQ jobs will fail.|
+Pod name        |Service|Scope*|Description*|Impact of restart*
+:---------------| :---: | --- | :--- | :--- 
+iis-services    |WKC    |AD, DQ, IAS, MI|Legacy IIS services tier. Runs IAS, AD, QS, DQ, MI backend and UI components. | All AD, QS, and DQ jobs are cancelled. The IAS, MI, and DQ UIs are restarted. Takes > 10 min to restart.
+iis-xmetarepo   |WKC    |AD, DQ, IAS, MI | XMeta metadata repository storing IAS, MI, and AD metadata (all legacy IGC metadata). | Requires subsequent restart of iis-services pod.
+finley-ml       |WKC    |AD, QS|Implements term assignment machine learning capabilities.|Running AD, QS, and DQ jobs may fail.
+is-en-conductor |WKC    |AD, DQ, DS|Legacy IIS engine tier. Runs DataStage jobs for AD, and DQ, as well as ODF.|Running AD and DQ jobs will fail.

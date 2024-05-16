@@ -1,7 +1,7 @@
 ## Catch all of random Cloud Pak for Data technical items
 > [!NOTE]
 > This below information on pods is from **3.5/2021-11 CPD 3.5 Draft Support Manual.pdf**  
-> This ONLY covers **Core Services** / **Knowledge Catalog** / **Some WSL**
+> This ONLY covers **Core Services** / **Knowledge Catalog** / **Some WSL**   
 > (*) AD: Automated discovery, QS: Quick scan, IAS: Information assets, MI: Metadata import, DS: DataStage, UG: Unified governance, WKC: Watson Knowledge Catalog, ODF: Open discovery framework, PRF: Profiling, DPS: Data protection service, GS: Global search, WF: workflow  
 
 ### Pods for data persistence 

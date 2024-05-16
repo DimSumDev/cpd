@@ -18,7 +18,7 @@ The following table provides a rough overview on how the different types of meta
 ### Pod reference table
 The following table provides reference information on the pods making up CP4D and its services.  
 
-Pod name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Service|Scope*|Description*|Impact of restart*
+Pod name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Service|Scope*|Description*|Impact of restart*
 :--------------- | :---: | --- | :--- | :--- 
 iis-services     |WKC    |AD, DQ, IAS, MI|Legacy IIS services tier. Runs IAS, AD, QS, DQ, MI backend and UI components. | All AD, QS, and DQ jobs are cancelled. The IAS, MI, and DQ UIs are restarted. Takes > 10 min to restart.
 iis-xmetarepo    |WKC    |AD, DQ, IAS, MI | XMeta metadata repository storing IAS, MI, and AD metadata (all legacy IGC metadata). | Requires subsequent restart of iis-services pod.

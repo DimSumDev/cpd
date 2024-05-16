@@ -26,7 +26,7 @@ iis-xmetarepo         |WKC    |AD, DQ, IAS, MI |XMeta metadata repository storin
 finley-ml             |WKC    |AD, QS          |Implements term assignment machine learning capabilities.                                       |Running AD, QS, and DQ jobs may fail.
 is-en-conductor       |WKC    |AD, DQ, DS      |Legacy IIS engine tier. Runs DataStage jobs for AD, and DQ, as well as ODF.                     |Running AD and DQ jobs will fail.
 is-enginecompute      |WKC    |AD, DS          |Used for parallel execution of DataStage jobs for AD and DQ (if configured).                    | Running AD and DQ jobs may fail.
-gov-catalog-search    |WKC    |UG              |Indexer which updates SOLR index upon receiving Kafka events                                    | tbd. 
+gov-catalog-search    |WKC    |UG              |Indexer which updates SOLR index upon receiving Kafka events                                    | TBD
 gov-enterprise-search |WKC    |UG              |UI serving the GraphExplorer visualization of enterprise Search graph data
 odf-fastanalyzer      |WKC    |QS              |Backend for quick scan. Implements a local Hadoop cluster for running data discovery algorithms.| Running QS jobs will fail.
 ia-analysis           |WKC    |AD, QS, DQ      |Backend for data quality projects. Also used for publishing QS results.                         | Running AD and DQ jobs may fail. DQ UI does not work.
